@@ -1,1 +1,7 @@
 *.class
+
+.idea/
+
+out/
+
+fun-with-java.iml
