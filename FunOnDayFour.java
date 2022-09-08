@@ -108,21 +108,7 @@ public class FunOnDayFour{
 		aInstance = a;
 	}
 
-	public String frontBack(String str) {
-  		if(str.length() == 1 || str.length() == 0){
-    		return str;
-  		}else{
-		    char[] chars = str.toCharArray();
-		    char temp = chars[0];
-		    chars[0] = chars[chars.length-1];
-		    chars[chars.length-1] = temp;
-		    String result = "";
-		    for(char ch : chars){
-		      result += ch;
-    		}
-  		}
-  		return result;
-  	}
+
 
 
   	
