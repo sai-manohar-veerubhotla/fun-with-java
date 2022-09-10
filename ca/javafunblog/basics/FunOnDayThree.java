@@ -1,3 +1,5 @@
+package ca.javafunblog.basics;
+
 import java.util.Arrays;
 
 public class FunOnDayThree{

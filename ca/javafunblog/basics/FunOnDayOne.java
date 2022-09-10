@@ -1,3 +1,5 @@
+package ca.javafunblog.basics;
+
 public class FunOnDayOne{
 
 	int someInt = 10;

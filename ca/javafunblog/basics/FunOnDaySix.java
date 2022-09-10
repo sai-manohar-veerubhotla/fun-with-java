@@ -1,3 +1,5 @@
+package ca.javafunblog.basics;
+
 public class FunOnDaySix {
 
     static boolean isPalindrome(int num) {
