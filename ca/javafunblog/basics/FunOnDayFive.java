@@ -1,3 +1,5 @@
+package ca.javafunblog.basics;
+
 import java.util.*;
 
 public class FunOnDayFive{
