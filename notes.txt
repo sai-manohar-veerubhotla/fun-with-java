@@ -2,4 +2,14 @@ Small Application:
 
 1. If I give the parameters required to calculate the area of a shape,
 I should be able to do it.
-2.
+2
+
+
+
+
+Inheritance Nomenclature
+
+Super Class
+    -> Sub Class
+Base Class
+    -> Derived Class
