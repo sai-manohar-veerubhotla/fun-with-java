@@ -1,0 +1,15 @@
+abstract -> keyword
+
+Since an abstract class can have abstract (incomplete or methods with no
+definition) methods, Java will not let us instantiate an abstract class.
+
+It is the responsibility of the inheriting class to provide the definition of
+the abstract method.
+
+
+A class which is defined as abstract, may or may not have an abstract method.
+A class which has at least one abstract method should be made abstract. no way
+around it.
+
+
+

@@ -14,22 +14,35 @@ public class SuperClass {
 
     public static int publicStaticSomeInt;
 
-    private void someMethod(){
+    private void someMethod() {
         System.out.println("Some Method!");
     }
 
     private static int someInt2;
 
     // accessor method - getter
-    public int getSomeInt(){
+    public int getSomeInt() {
         return someInt;
     }
 
     // accessor method - setter
-    public void setSomeInt(int a){
+    public void setSomeInt(int a) {
         System.out.println("I am inside setSomeInt: " + a);
         someInt = a;
     }
 
 
+    protected void protectedMethod() {
+        System.out.println("protectedMethod: " + getClass().getName());
+    }
+
+
+    public void publicMethod() {
+        System.out.println("publicMethod: " + getClass().getName());
+    }
+
+
+    void noKeywordMethod(){
+        System.out.println("noKeywordMethod: " + getClass().getName());
+    }
 }
