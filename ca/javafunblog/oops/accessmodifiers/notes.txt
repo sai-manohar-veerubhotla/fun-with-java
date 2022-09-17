@@ -1,0 +1,7 @@
+1. public -> Anywhere inside the package and outside the package until you learn
+ about modules in Java or JPMS -> Java Package Management System (Java9).
+2. private -> Anywhere inside the class it was defined in.
+3. package-private or no keyword -> Anywhere inside the package. Outside-of the
+  package, it cannot be accessed.
+4. protected -> Anywhere inside the package. Outside-of the package, only in
+ the derived classes.

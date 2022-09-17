@@ -1,0 +1,24 @@
+An interface has to be implemented.
+An interface provides a contract.
+
+
+JavaEE -> functionality
+any framework arises from -> JavaEE
+they just make our job easier to use JavaEE.
+JavaEE -> is a contract provided by the oracle corp
+Java web app -> to transfer an object over the network, we need some classes.
+they are inside a package called javax.
+javax -> interfaces -> provides implementation (classes)
+quarkus -> I also provide an implementation to the interfaces defined in javax
+package.
+
+I don't want to use the implementation provided in some x
+but I want to provide my own implementation.
+the ultimate goal is to send an object over the network
+interfaces -> this is a base contract provided by one organization
+so, if we want to develop some functionality, we have to abide by that contract.
+
+
+
+ALWAYS CODE AGAINST AN INTERFACE
+
