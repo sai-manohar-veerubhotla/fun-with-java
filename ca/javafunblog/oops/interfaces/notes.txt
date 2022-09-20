@@ -20,5 +20,5 @@ so, if we want to develop some functionality, we have to abide by that contract.
 
 
 
-ALWAYS CODE AGAINST AN INTERFACE
+ALWAYS CODE TO AN INTERFACE
 
