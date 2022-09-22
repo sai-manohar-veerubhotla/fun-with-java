@@ -22,3 +22,33 @@ so, if we want to develop some functionality, we have to abide by that contract.
 
 ALWAYS CODE TO AN INTERFACE
 
+SuperClass superClassReference = new SuperClass();
+SubClass subClassReference = new SubClass();
+SuperClass superClassReference = new SubClass();
+
+
+
+Interface interface = new ImplementationClass();
+
+
+// ALL INSTANCE VARIABLES SHOULD BE INITIALIZED.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
