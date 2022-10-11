@@ -1,6 +1,7 @@
 package ca.javafunblog.collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ListFun {
@@ -162,6 +163,28 @@ public class ListFun {
 
     }
 
+    private static void sort() {
+        List.of(); // this creates an immutable list
+        List<Integer> list = ListUtil.list(10, 100);
+        System.out.println("Un-Sorted List: " + list);
+        Collections.sort(list);
+        System.out.println("Sorted List: " + list);
+        list.clear();
+
+        list = ListUtil.list(5, 100);
+        System.out.println("list: " + list);
+        Collections.reverse(list);
+        System.out.println("reversed list: " + list);
+        list.clear();
+
+        // sort by descending order
+        list = ListUtil.list(4, 100);
+        System.out.println("list: " + list);
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println("Sorted List (DESC): " + list);
+
+    }
+
 
     public static void main(String[] args) {
 //        listDemo();
@@ -174,5 +197,7 @@ public class ListFun {
 //        remove();
 //        set();
 //        moreFun();
+
+        sort();
     }
 }
