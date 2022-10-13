@@ -1,4 +1,4 @@
-package ca.javafunblog.collections;
+package ca.javafunblog.collections.list;
 
 import java.util.ArrayList;
 import java.util.Collections;

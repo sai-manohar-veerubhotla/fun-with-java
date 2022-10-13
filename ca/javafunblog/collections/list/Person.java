@@ -1,4 +1,4 @@
-package ca.javafunblog.collections;
+package ca.javafunblog.collections.list;
 
 public class Person {
 
