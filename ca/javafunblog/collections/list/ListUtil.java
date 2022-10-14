@@ -18,6 +18,10 @@ public class ListUtil {
         return list;
     }
 
+    public static List<Integer> list(){
+        return list(10, 100);
+    }
+
     public static List<Integer> list(int size, int bound) {
         Random random = new Random();
         // METHOD CHAINING
