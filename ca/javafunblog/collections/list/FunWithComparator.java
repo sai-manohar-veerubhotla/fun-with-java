@@ -33,7 +33,6 @@ public class FunWithComparator {
                 Comparator.comparing(Person::getName));
 
 
-
         // Function -> takes one input -> gives one output
         // Supplier -> takes nothing -> but gives output
         // Consumer -> takes something -> gives nothing
