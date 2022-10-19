@@ -2,6 +2,7 @@ package ca.javafunblog.collections.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ListFun {
@@ -183,6 +184,20 @@ public class ListFun {
         Collections.sort(list, Collections.reverseOrder());
         System.out.println("Sorted List (DESC): " + list);
 
+    }
+
+
+    private static void linkedList(){
+        List<Integer> ll = new LinkedList<>();
+        // what are the cons of using an arraylist
+        // when frequent operation is deletion of elements
+        // you don't want to use an ArrayList
+        // 1,2,3,4,5
+        ll.add(1); // memory -> [1]
+        ll.add(2); // memory -> [1, 2nd address]            [2]
+        ll.add(3); // memory -> [1, 2nd address] [2,3rd address]  [3, null]
+        ll.remove(Integer.valueOf(1)); //
+       // [null, 1, next address] [prev, 2,  next]
     }
 
 
