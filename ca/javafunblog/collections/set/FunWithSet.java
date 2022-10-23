@@ -2,16 +2,18 @@ package ca.javafunblog.collections.set;
 
 import ca.javafunblog.collections.list.ListUtil;
 
+
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.NavigableSet;
 import java.util.Set;
+import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
-import java.util.stream.Collectors;
+
 
 public class FunWithSet {
 
@@ -33,7 +35,6 @@ public class FunWithSet {
 
 
     }
-
 
     private static void hashSetFun() {
         List<Integer> list = ListUtil.list();
@@ -97,7 +98,54 @@ public class FunWithSet {
     }
 
 
+    private static void treeSetFun() {
+        Set<Integer> set = new TreeSet<>();
+        TreeSet<Integer> treeSet = new TreeSet<>(ListUtil.list(10));
+        System.out.println(treeSet);
+        System.out.println(treeSet.ceiling(10)); // 10
+        System.out.println(treeSet.ceiling(11)); // null
+        System.out.println(treeSet.floor(11)); // 10
+        System.out.println(treeSet.floor(10)); // 10
+        NavigableSet<Integer> navigableSet = treeSet.descendingSet();
+        System.out.println(navigableSet);
+        System.out.println(treeSet.first());
+        System.out.println(treeSet.last());
+        SortedSet<Integer> headSetExcl = treeSet.headSet(5);
+        System.out.println(headSetExcl);
+        SortedSet<Integer> headSetIncl = treeSet.headSet(5, true);
+        System.out.println(headSetIncl);
+        // this is same as ceiling but ceiling is originally from TreeSet
+        // whereas higher is from NavigableSet
+        System.out.println(treeSet.higher(11)); // null
+        System.out.println(treeSet.lower(11)); // 10
+        System.out.println(treeSet.lower(0)); // null
+        System.out.println(treeSet.pollFirst()); // 1
+        System.out.println(treeSet.pollLast()); // 10
+        System.out.println(treeSet.subSet(4, 8)); // [4,5,6,7]
+        // [4,5,6,7,8]
+        System.out.println(treeSet.subSet(4, true, 8, true));
+    }
+
+    private static void linkedHashSetFun(){
+        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>(ListUtil.list(10));
+        System.out.println(linkedHashSet);
+        // same methods as HashSet
+    }
+
+    private static void moreFun(){
+        Set<Integer> set = Set.of(1, 2, 3);
+    }
+
+
+    private static void spliteratorFun() {
+        // WILL GET BACK TO THIS IN THE NEXT CLASSES
+    }
+
+
     public static void main(String[] args) {
-        hashSetFun();
+//        hashSetFun();
+//        treeSetFun();
+//        spliteratorFun();
+        linkedHashSetFun();
     }
 }
