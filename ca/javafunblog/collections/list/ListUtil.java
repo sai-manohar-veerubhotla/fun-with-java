@@ -18,7 +18,7 @@ public class ListUtil {
         return list;
     }
 
-    public static List<Integer> list(){
+    public static List<Integer> list() {
         return list(10, 100);
     }
 
@@ -36,6 +36,9 @@ public class ListUtil {
         System.out.println(list(4, 100));
     }
 
+    public static List<Integer> list(int size) {
+        return List.of(1, 2, 3, 4, 5, 10, 9, 8, 7, 6);
+    }
 
     private static void randomDemo() {
         Random random = new Random();
