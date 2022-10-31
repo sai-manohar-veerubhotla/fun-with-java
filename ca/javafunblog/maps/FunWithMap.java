@@ -2,12 +2,14 @@ package ca.javafunblog.maps;
 
 import ca.javafunblog.collections.list.ListUtil;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 
 public class FunWithMap {
 
@@ -54,9 +56,6 @@ public class FunWithMap {
         System.out.println(values);
 
 
-
-
-
     }
 
 
@@ -86,9 +85,17 @@ public class FunWithMap {
         );
     }
 
+    private static void mapFun2() {
+        var map = new HashMap<String, List<Integer>>();
+        System.out.println(map);
+        map.computeIfAbsent("Manohar", s -> List.of(1, 2, 3));
+        System.out.println(map);
+    }
 
     public static void main(String[] args) {
-        mapFun();
+//        mapFun();
+        mapFun2();
+
 
 //        System.out.println(attendance());
     }

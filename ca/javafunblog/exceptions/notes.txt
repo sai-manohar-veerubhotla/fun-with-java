@@ -1,0 +1,26 @@
+Exceptions:
+
+CHECKED EXCEPTIONS
+UN-CHECKED EXCEPTIONS -> RuntimeExceptions
+
+IF YOU WANT TO CREATE ANY CUSTOM EXCEPTION IN JAVA, ALWAYS EXTEND RuntimeException.
+
+
+YOU CANNOT JUST IGNORE CHECKED EXCEPTIONS.
+YOU HAVE TO HANDLE THEM SOONER OR LATER.
+IF YOU IGNORE THEM FOR TIME BEING, IT IS THE RESPONSIBILITY OF THE CALLER METHOD TO HANDLE IT.
+
+
+throws vs throw
+
+throws is used to ignore the exception
+throw is used to throw a new exception.
+
+
+try -> should contain as much less code as possible. in fact, it should only contain the problematic code.
+catch -> while writing catch blocks, the way we catch exceptions should be as follows: most specific to least specific.
+
+
+All exceptions in java arise from `Throwable`
+Throwable
+/\
